@@ -1,0 +1,40 @@
+LiquidCrystalLCD.cpp:31:1:LiquidCrystal_I2C::LiquidCrystal_I2C(uint8_t, uint8_t, uint8_t, uint8_t)	16	static
+LiquidCrystalLCD.cpp:40:6:void LiquidCrystal_I2C::begin()	16	static
+LiquidCrystalLCD.cpp:105:6:void LiquidCrystal_I2C::clear()	16	static
+LiquidCrystalLCD.cpp:111:6:void LiquidCrystal_I2C::home()	16	static
+LiquidCrystalLCD.cpp:117:6:void LiquidCrystal_I2C::setCursor(uint8_t, uint8_t)	40	static
+LiquidCrystalLCD.cpp:127:6:void LiquidCrystal_I2C::noDisplay()	16	static
+LiquidCrystalLCD.cpp:132:6:void LiquidCrystal_I2C::display()	16	static
+LiquidCrystalLCD.cpp:139:6:void LiquidCrystal_I2C::noCursor()	16	static
+LiquidCrystalLCD.cpp:144:6:void LiquidCrystal_I2C::cursor()	16	static
+LiquidCrystalLCD.cpp:151:6:void LiquidCrystal_I2C::noBlink()	16	static
+LiquidCrystalLCD.cpp:156:6:void LiquidCrystal_I2C::blink()	16	static
+LiquidCrystalLCD.cpp:163:6:void LiquidCrystal_I2C::scrollDisplayLeft()	16	static
+LiquidCrystalLCD.cpp:167:6:void LiquidCrystal_I2C::scrollDisplayRight()	16	static
+LiquidCrystalLCD.cpp:173:6:void LiquidCrystal_I2C::leftToRight()	16	static
+LiquidCrystalLCD.cpp:180:6:void LiquidCrystal_I2C::rightToLeft()	16	static
+LiquidCrystalLCD.cpp:187:6:void LiquidCrystal_I2C::autoscroll()	16	static
+LiquidCrystalLCD.cpp:194:6:void LiquidCrystal_I2C::noAutoscroll()	16	static
+LiquidCrystalLCD.cpp:202:6:void LiquidCrystal_I2C::createChar(uint8_t, uint8_t*)	32	static
+LiquidCrystalLCD.cpp:212:6:void LiquidCrystal_I2C::noBacklight()	16	static
+LiquidCrystalLCD.cpp:218:6:void LiquidCrystal_I2C::backlight()	16	static
+LiquidCrystalLCD.cpp:223:6:bool LiquidCrystal_I2C::getBacklight()	16	static
+LiquidCrystalLCD.cpp:231:13:void LiquidCrystal_I2C::command(uint8_t)	16	static
+LiquidCrystalLCD.cpp:236:15:virtual size_t LiquidCrystal_I2C::write(uint8_t)	16	static
+LiquidCrystalLCD.cpp:245:6:void LiquidCrystal_I2C::send(uint8_t, uint8_t)	24	static
+LiquidCrystalLCD.cpp:253:6:void LiquidCrystal_I2C::write4bits(uint8_t)	16	static
+LiquidCrystalLCD.cpp:259:6:void LiquidCrystal_I2C::expanderWrite(uint8_t)	16	static
+LiquidCrystalLCD.cpp:266:6:void LiquidCrystal_I2C::pulseEnable(uint8_t)	16	static
+LiquidCrystalLCD.cpp:275:6:void LiquidCrystal_I2C::load_custom_character(uint8_t, uint8_t*)	24	static
+LiquidCrystalLCD.cpp:280:6:void LiquidCrystal_I2C::setBacklight(uint8_t)	16	static
+LiquidCrystalLCD.cpp:286:6:void LiquidCrystal_I2C::printstr(const char*)	16	static
+LiquidCrystalLCD.cpp:294:8:size_t LiquidCrystal_I2C::print(char)	16	static
+LiquidCrystalLCD.cpp:299:8:size_t LiquidCrystal_I2C::print(const char*)	24	static
+LiquidCrystalLCD.cpp:305:8:size_t LiquidCrystal_I2C::print(unsigned char, int)	24	static
+LiquidCrystalLCD.cpp:310:8:size_t LiquidCrystal_I2C::print(int, int)	24	static
+LiquidCrystalLCD.cpp:315:8:size_t LiquidCrystal_I2C::print(unsigned int, int)	24	static
+LiquidCrystalLCD.cpp:320:8:size_t LiquidCrystal_I2C::print(long int, int)	32	static
+LiquidCrystalLCD.cpp:336:8:size_t LiquidCrystal_I2C::print(long unsigned int, int)	24	static
+LiquidCrystalLCD.cpp:342:8:size_t LiquidCrystal_I2C::print(double, int)	32	static
+LiquidCrystalLCD.cpp:348:8:size_t LiquidCrystal_I2C::printNumber(long unsigned int, uint8_t)	64	static
+LiquidCrystalLCD.cpp:368:8:size_t LiquidCrystal_I2C::printFloat(double, uint8_t)	80	static

@@ -1,0 +1,13 @@
+GPIO.c:19:15:getDigitalGPIO	16	static
+GPIO.c:29:9:getAnalogPin	16	static
+GPIO.c:47:9:getDigitalPin	16	static
+GPIO.c:58:6:pinMode	32	static
+GPIO.c:87:6:digitalWrite	24	static
+GPIO.c:101:6:digitalToggle	24	static
+GPIO.c:113:9:digitalRead	32	static
+GPIO.c:143:6:analogEnable	48	static
+GPIO.c:198:6:analogDisable	8	static
+GPIO.c:217:10:analogRead	16	static
+GPIO.c:253:6:analogWrite	32	static
+GPIO.c:378:6:analogInit	56	static
+GPIO.c:554:6:ADC_DMA_Init	88	static

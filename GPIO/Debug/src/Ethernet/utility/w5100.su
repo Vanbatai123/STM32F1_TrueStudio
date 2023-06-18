@@ -1,0 +1,47 @@
+w5100.h:152:18:static uint8_t W5100Class::write(uint16_t, uint8_t)	16	static
+w5100.h:156:18:static uint8_t W5100Class::read(uint16_t)	24	static
+w5100.h:191:3:static void W5100Class::writeMR(uint8_t)	16	static
+w5100.h:191:3:static uint8_t W5100Class::readMR()	8	static
+w5100.h:192:3:static uint16_t W5100Class::writeGAR(const uint8_t*)	16	static
+w5100.h:192:3:static uint16_t W5100Class::readGAR(uint8_t*)	16	static
+w5100.h:193:3:static uint16_t W5100Class::writeSUBR(const uint8_t*)	16	static
+w5100.h:193:3:static uint16_t W5100Class::readSUBR(uint8_t*)	16	static
+w5100.h:194:3:static uint16_t W5100Class::writeSHAR(const uint8_t*)	16	static
+w5100.h:194:3:static uint16_t W5100Class::readSHAR(uint8_t*)	16	static
+w5100.h:195:3:static uint16_t W5100Class::writeSIPR(const uint8_t*)	16	static
+w5100.h:195:3:static uint16_t W5100Class::readSIPR(uint8_t*)	16	static
+w5100.h:200:3:static void W5100Class::writeRMSR(uint8_t)	16	static
+w5100.h:201:3:static void W5100Class::writeTMSR(uint8_t)	16	static
+w5100.h:207:3:static uint8_t W5100Class::readVERSIONR_W5200()	8	static
+w5100.h:208:3:static uint8_t W5100Class::readVERSIONR_W5500()	8	static
+w5100.h:209:3:static uint8_t W5100Class::readPSTATUS_W5200()	8	static
+w5100.h:210:3:static uint8_t W5100Class::readPHYCFGR_W5500()	8	static
+w5100.h:220:19:static uint16_t W5100Class::CH_BASE()	4	static
+w5100.h:229:25:static uint8_t W5100Class::readSn(SOCKET, uint16_t)	16	static
+w5100.h:232:25:static uint8_t W5100Class::writeSn(SOCKET, uint16_t, uint8_t)	16	static
+w5100.h:271:3:static void W5100Class::writeSnCR(SOCKET, uint8_t)	16	static
+w5100.h:271:3:static uint8_t W5100Class::readSnCR(SOCKET)	16	static
+w5100.h:282:3:static void W5100Class::writeSnRX_SIZE(SOCKET, uint8_t)	16	static
+w5100.h:283:3:static void W5100Class::writeSnTX_SIZE(SOCKET, uint8_t)	16	static
+w5100.h:434:21:static void W5100Class::initSS()	8	static
+w5100.h:437:21:static void W5100Class::setSS()	8	static
+w5100.h:440:21:static void W5100Class::resetSS()	8	static
+w5100.cpp:87:6:void W5100Class::setGatewayIp(const uint8_t*)	16	static
+w5100.cpp:88:6:void W5100Class::getGatewayIp(uint8_t*)	16	static
+w5100.cpp:90:6:void W5100Class::setSubnetMask(const uint8_t*)	16	static
+w5100.cpp:91:6:void W5100Class::getSubnetMask(uint8_t*)	16	static
+w5100.cpp:93:6:void W5100Class::setMACAddress(const uint8_t*)	16	static
+w5100.cpp:94:6:void W5100Class::getMACAddress(uint8_t*)	16	static
+w5100.cpp:96:6:void W5100Class::setIPAddress(const uint8_t*)	16	static
+w5100.cpp:97:6:void W5100Class::getIPAddress(uint8_t*)	16	static
+w5100.cpp:99:9:static uint8_t W5100Class::init()	16	static
+w5100.cpp:214:9:static uint8_t W5100Class::softReset()	16	static
+w5100.cpp:232:9:static uint8_t W5100Class::isW5100()	8	static
+w5100.cpp:247:9:static uint8_t W5100Class::isW5200()	16	static
+w5100.cpp:266:9:static uint8_t W5100Class::isW5500()	16	static
+w5100.cpp:285:17:static W5100Linkstatus W5100Class::getLinkStatus()	16	static
+w5100.cpp:308:10:static uint16_t W5100Class::write(uint16_t, const uint8_t*, uint16_t)	32	static
+w5100.cpp:399:10:static uint16_t W5100Class::read(uint16_t, uint8_t*, uint16_t)	32	static
+w5100.cpp:481:6:static void W5100Class::execCmdSn(SOCKET, SockCMD)	16	static
+w5100.cpp:487:1:void __static_initialization_and_destruction_0(int, int)	24	static
+w5100.cpp:487:1:cpp)	8	static

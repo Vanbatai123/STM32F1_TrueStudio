@@ -1,0 +1,55 @@
+/*
+ *
+ * Project convert STM32 to Arduino
+ *
+ *	Done: SPI1, USART1, I2C1, ADC1, ADC_DMA, EXTI
+ *	Undone: DMA, Interrupt, ADC, Timer...
+ *
+ *  Created on: Aug 8, 2018
+ *      Author: Van_BasTai
+ */
+
+#include <include.h>
+#include <Wire/Wire.h>
+#include <Serial/Serial.h>
+#include <Liquid_LCD/LiquidCrystal_I2C.h>
+/* Private typedef -----------------------------------------------------------*/
+/* Private function prototypes -----------------------------------------------*/
+/* Private function prototypes */
+/* Private functions */
+
+/**
+ * MAIN FUNCTION
+ */
+int second = 0;
+int main(void)
+{
+	LiquidCrystal_I2C lcd(0x3F, 16, 2);
+	Serial.begin(115200);
+	Serial.println("Serial OK!!!");
+	lcd.begin();
+
+	pinMode(C13, 1);
+	bool blinking = true;
+	lcd.cursor();
+	lcd.write(65);
+	while (1)
+	{
+		digitalToggle(C13);
+		if (blinking)
+		{
+			lcd.clear();
+			lcd.print("No cursor blink");
+			lcd.noBlink();
+			blinking = false;
+		}
+		else
+		{
+			lcd.clear();
+			lcd.print("Cursor blink");
+			lcd.blink();
+			blinking = true;
+		}
+		delay(1000);
+	}
+}

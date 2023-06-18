@@ -1,0 +1,7 @@
+Wire.cpp:18:1:TwoWire::TwoWire()	16	static
+Wire.cpp:29:1:TwoWire::~TwoWire()	16	static
+Wire.cpp:29:1:virtual TwoWire::~TwoWire()	16	static
+Wire.cpp:39:6:void TwoWire::begin()	16	static
+Wire.cpp:43:5:int a()	4	static
+Wire.cpp:46:1:void __static_initialization_and_destruction_0(int, int)	16	static
+Wire.cpp:46:1:cpp)	8	static

@@ -1,0 +1,5 @@
+main.c:40:14:draw	136	static
+main.c:277:6:endPointX	8	static
+main.c:282:6:endPointY	8	static
+main.c:292:5:main	232	static
+main.c:346:6:UART3_Event	16	static

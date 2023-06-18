@@ -1,0 +1,17 @@
+Wire.cpp:30:1:TwoWire::TwoWire()	16	static
+Wire.cpp:36:1:TwoWire::~TwoWire()	16	static
+Wire.cpp:36:1:virtual TwoWire::~TwoWire()	16	static
+Wire.cpp:44:6:void twi_attachSlaveTxEvent(void (*)())	16	static
+Wire.cpp:49:6:void twi_attachSlaveRxEvent(void (*)(uint8_t*, int))	16	static
+Wire.cpp:54:6:void TwoWire::begin(int)	40	static
+Wire.cpp:85:6:void TwoWire::end()	16	static
+Wire.cpp:97:6:void TwoWire::setClock(uint32_t)	16	static
+Wire.cpp:102:6:void TwoWire::beginTransmission(int)	16	static
+Wire.cpp:145:9:uint8_t TwoWire::endTransmission(uint8_t)	16	static
+Wire.cpp:162:9:uint8_t TwoWire::endTransmission()	16	static
+Wire.cpp:167:9:uint8_t TwoWire::requestFrom(int, int)	32	static
+Wire.cpp:203:5:int TwoWire::read()	16	static
+Wire.cpp:218:8:size_t TwoWire::write(uint8_t)	16	static
+Wire.cpp:243:8:size_t TwoWire::write(const uint8_t*, size_t)	24	static
+Wire.cpp:263:25:void __static_initialization_and_destruction_0(int, int)	16	static
+Wire.cpp:263:25:cpp)	8	static

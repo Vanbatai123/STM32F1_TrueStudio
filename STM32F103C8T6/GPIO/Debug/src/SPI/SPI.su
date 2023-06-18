@@ -1,0 +1,4 @@
+SPI.cpp:10:1:SPI::SPI()	16	static
+SPI.cpp:15:1:SPI::~SPI()	16	static
+SPI.cpp:15:1:virtual SPI::~SPI()	16	static
+SPI.cpp:19:9:uint8_t SPI::transfer(uint8_t)	16	static

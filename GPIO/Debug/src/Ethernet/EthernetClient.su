@@ -1,0 +1,44 @@
+Print.h:43:10:void Print::setWriteError(int)	16	static
+Print.h:45:5:Print::Print()	16	static
+Print.h:62:17:virtual int Print::availableForWrite()	16	static
+Print.h:83:18:virtual void Print::flush()	16	static
+Stream.h:63:5:Stream::Stream()	16	static
+IPAddress.h:40:14:uint8_t* IPAddress::raw_address()	16	static
+IPAddress.h:55:10:bool IPAddress::operator==(const IPAddress&) const	16	static
+Client.h:42:12:uint8_t* Client::rawIPAddress(IPAddress&)	16	static
+Udp.h:45:19:virtual uint8_t UDP::beginMulticast(IPAddress, uint16_t)	24	static
+Printable.h:33:7:Printable::Printable(const Printable&)	16	static
+IPAddress.h:29:7:IPAddress::IPAddress(const IPAddress&)	16	static
+Ethernet.h:98:19:static IPAddress EthernetClass::dnsServerIP()	16	static
+Udp.h:41:7:UDP::UDP()	16	static
+Ethernet.h:164:2:EthernetUDP::EthernetUDP()	16	static
+Ethernet.h:232:10:virtual EthernetClient::operator bool()	16	static
+Ethernet.h:233:15:virtual bool EthernetClient::operator==(bool)	16	static
+Ethernet.h:234:15:virtual bool EthernetClient::operator!=(bool)	16	static
+Ethernet.h:236:15:virtual bool EthernetClient::operator!=(const EthernetClient&)	16	static
+Ethernet.h:241:15:virtual void EthernetClient::setConnectionTimeout(uint16_t)	16	static
+w5100.h:220:19:static uint16_t W5100Class::CH_BASE()	4	static
+w5100.h:235:26:static uint16_t W5100Class::readSn(SOCKET, uint16_t, uint8_t*, uint16_t)	24	static
+w5100.h:274:3:static uint16_t W5100Class::readSnPORT(SOCKET)	24	static
+w5100.h:276:3:static uint16_t W5100Class::readSnDIPR(SOCKET, uint8_t*)	16	static
+w5100.h:277:3:static uint16_t W5100Class::readSnDPORT(SOCKET)	24	static
+Dns.h:10:7:DNSClient::DNSClient()	16	static
+EthernetClient.cpp:27:5:virtual int EthernetClient::connect(const char*, uint16_t)	104	static
+EthernetClient.cpp:43:5:virtual int EthernetClient::connect(IPAddress, uint16_t)	56	static
+EthernetClient.cpp:73:5:virtual int EthernetClient::availableForWrite()	16	static
+EthernetClient.cpp:79:8:virtual size_t EthernetClient::write(uint8_t)	16	static
+EthernetClient.cpp:84:8:virtual size_t EthernetClient::write(const uint8_t*, size_t)	24	static
+EthernetClient.cpp:92:5:virtual int EthernetClient::available()	16	static
+EthernetClient.cpp:104:5:virtual int EthernetClient::read(uint8_t*, size_t)	24	static
+EthernetClient.cpp:110:5:virtual int EthernetClient::peek()	16	static
+EthernetClient.cpp:117:5:virtual int EthernetClient::read()	24	static
+EthernetClient.cpp:124:6:virtual void EthernetClient::flush()	24	static
+EthernetClient.cpp:133:6:virtual void EthernetClient::stop()	24	static
+EthernetClient.cpp:155:9:virtual uint8_t EthernetClient::connected()	24	static
+EthernetClient.cpp:164:9:uint8_t EthernetClient::status()	16	static
+EthernetClient.cpp:172:6:virtual bool EthernetClient::operator==(const EthernetClient&)	16	static
+EthernetClient.cpp:182:10:virtual uint16_t EthernetClient::localPort()	24	static
+EthernetClient.cpp:194:11:virtual IPAddress EthernetClient::remoteIP()	24	static
+EthernetClient.cpp:206:10:virtual uint16_t EthernetClient::remotePort()	24	static
+EthernetClient.cpp:214:1:void __static_initialization_and_destruction_0(int, int)	24	static
+EthernetClient.cpp:214:1:cpp)	8	static

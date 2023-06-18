@@ -1,0 +1,30 @@
+Print.h:45:10:void Print::setWriteError(int)	16	static
+Print.h:47:5:Print::Print()	16	static
+Print.h:49:9:int Print::getWriteError()	16	static
+Print.h:50:10:void Print::clearWriteError()	16	static
+Print.h:64:17:virtual int Print::availableForWrite()	16	static
+Print.h:85:18:virtual void Print::flush()	16	static
+SdFat.h:161:12:uint32_t SdFile::curPosition() const	16	static
+SdFat.h:208:12:uint32_t SdFile::fileSize() const	16	static
+SdFat.h:212:11:uint8_t SdFile::isDir() const	16	static
+SdFat.h:216:11:uint8_t SdFile::isOpen() const	16	static
+SdFat.h:239:11:int16_t SdFile::read()	24	static
+SdFat.h:254:11:uint8_t SdFile::seekCur(uint32_t)	16	static
+SdFatUtil.h:39:21:int FreeRam()	16	static
+Stream.h:63:5:Stream::Stream()	16	static
+File.cpp:21:1:SDLib::File::File(SdFile, const char*)	24	static
+File.cpp:40:1:SDLib::File::File()	16	static
+File.cpp:47:7:char* SDLib::File::name()	16	static
+File.cpp:52:9:boolean SDLib::File::isDirectory()	16	static
+File.cpp:57:8:virtual size_t SDLib::File::write(uint8_t)	16	static
+File.cpp:61:8:virtual size_t SDLib::File::write(const uint8_t*, size_t)	32	static
+File.cpp:76:5:virtual int SDLib::File::peek()	24	static
+File.cpp:85:5:virtual int SDLib::File::read()	16	static
+File.cpp:92:5:int SDLib::File::read(void*, uint16_t)	24	static
+File.cpp:98:5:virtual int SDLib::File::available()	32	static
+File.cpp:106:6:virtual void SDLib::File::flush()	16	static
+File.cpp:111:9:boolean SDLib::File::seek(uint32_t)	16	static
+File.cpp:117:10:uint32_t SDLib::File::position()	16	static
+File.cpp:122:10:uint32_t SDLib::File::size()	16	static
+File.cpp:127:6:void SDLib::File::close()	16	static
+File.cpp:141:1:SDLib::File::operator bool()	16	static

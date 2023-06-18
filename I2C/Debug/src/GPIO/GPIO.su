@@ -1,0 +1,4 @@
+GPIO.c:16:6:pinMode	24	static
+GPIO.c:63:6:digitalWrite	16	static
+GPIO.c:72:6:digitalToggle	16	static
+GPIO.c:80:9:digitalRead	16	static

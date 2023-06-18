@@ -1,0 +1,15 @@
+Print.h:47:5:Print::Print()	16	static
+Sd2Card.h:179:3:Sd2Card::Sd2Card()	16	static
+Sd2Card.h:230:11:uint8_t Sd2Card::type() const	16	static
+SdFat.h:140:3:SdFile::SdFile()	16	static
+SdFat.h:349:11:uint8_t SdFile::openRoot(SdVolume&)	16	static
+SdFat.h:434:3:SdVolume::SdVolume()	16	static
+SdFat.h:454:11:uint8_t SdVolume::init(Sd2Card*)	16	static
+SdFat.h:459:11:uint8_t SdVolume::blocksPerCluster() const	16	static
+SdFat.h:463:12:uint32_t SdVolume::clusterCount() const	16	static
+SdFat.h:473:11:uint8_t SdVolume::fatType() const	16	static
+SdFat.h:485:11:uint8_t SdVolume::init(Sd2Card&)	16	static
+SdFatUtil.h:39:21:int FreeRam()	16	static
+main.cpp:46:5:int main()	32	static
+main.cpp:131:1:void __static_initialization_and_destruction_0(int, int)	16	static
+main.cpp:131:1:cpp)	8	static

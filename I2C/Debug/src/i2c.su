@@ -1,0 +1,3 @@
+i2c.c:27:8:I2C_Read	40	static
+i2c.c:154:8:I2C_Write	32	static
+i2c.c:191:6:I2C_LowLevel_Init	48	static

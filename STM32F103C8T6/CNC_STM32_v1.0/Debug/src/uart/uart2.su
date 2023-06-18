@@ -1,0 +1,9 @@
+uart2.c:12:6:UART2_config	40	static
+uart2.c:65:6:UART2_putChar	16	static
+uart2.c:76:6:UART2_print	16	static
+uart2.c:85:6:UART2_printNum	48	static
+uart2.c:94:6:UART2_printNumln	48	static
+uart2.c:103:6:UART2_printFloat	72	static
+uart2.c:144:6:UART2_printFloatln	24	static
+uart2.c:150:6:UART2_println	16	static
+uart2.c:156:9:UART2_getChar	8	static

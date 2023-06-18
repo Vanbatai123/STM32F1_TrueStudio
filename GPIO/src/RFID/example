@@ -1,0 +1,79 @@
+/*
+ *
+ * Project convert STM32 to Arduino
+ *
+ *	Done: SPI1, USART1
+ *
+ *  Created on: Aug 8, 2018
+ *      Author: Van_BasTai
+ */
+
+/* include */
+
+#include <include.h>
+//#include <Wire/Wire.h>
+#include <Serial/Serial.h>
+#include <SPI/SPIClass.h>
+#include <RFID/MFRC522.h>
+//#include <Liquid_LCD/LiquidCrystal_SPi.h>
+
+
+/* Private define */
+
+/* Private typedef */
+
+/* Private function prototypes */
+
+/* Private functions */
+
+/* Private vraiable */
+int receiveData = 0;
+
+/************************************************************/
+/*                  MAIN FUNCTION							*/
+/************************************************************/
+int main(void)
+{
+	MFRC522 mfrc522(SPI1_PIN_NSS, A3);	// Create MFRC522 instance.
+
+
+	Serial.begin(115200);	// Initialize serial communications with the PC
+	SPI.begin(SPI_Mode_Master);			// Init SPI bus
+	mfrc522.PCD_Init();	// Init MFRC522 card
+	Serial.println("Scan PICC to see UID and type...");
+
+	pinMode(C13, OUTPUT);
+	int status = 1;
+	while (1)
+	{
+		digitalToggle(C13);
+		status = 1;
+		// Look for new cards
+		if (!mfrc522.PICC_IsNewCardPresent()) {
+			status = 0;
+		}
+		// Select one of the cards
+		if (status == 1)
+			if (!mfrc522.PICC_ReadCardSerial()) {
+				status = 0;
+			}
+
+		if (status == 1)
+		{
+
+			Serial.print("Card UID:");
+			for (byte i = 0; i < mfrc522.uid.size; i++)
+			{
+				Serial.print(mfrc522.uid.uidByte[i] < 0x10 ? " 0" : " ");
+				Serial.print(mfrc522.uid.uidByte[i], HEX);
+			}
+			Serial.println();
+
+			// PICC type
+			byte piccType = mfrc522.PICC_GetType(mfrc522.uid.sak);
+			Serial.print("PICC type: ");
+			Serial.println(mfrc522.PICC_GetTypeName(piccType));
+		}
+		delay(1500);
+	}
+}

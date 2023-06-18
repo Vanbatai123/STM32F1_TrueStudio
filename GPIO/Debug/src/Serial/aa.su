@@ -1,0 +1,3 @@
+aa.cpp:10:1:aa::aa()	16	static
+aa.cpp:15:1:aa::~aa()	16	static
+aa.cpp:15:1:virtual aa::~aa()	16	static

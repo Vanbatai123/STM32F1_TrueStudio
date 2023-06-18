@@ -1,0 +1,5 @@
+core_cm3.h:1014:22:NVIC_SetPriority	16	static
+core_cm3.h:1139:26:SysTick_Config	16	static
+include.c:12:6:TimingDelay_Decrement	4	static
+include.c:20:6:SysTick_Handler	8	static
+include.c:25:6:delay	16	static

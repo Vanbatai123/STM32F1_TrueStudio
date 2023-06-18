@@ -1,0 +1,11 @@
+Wire.cpp:28:1:TwoWire::TwoWire()	16	static
+Wire.cpp:36:1:TwoWire::~TwoWire()	16	static
+Wire.cpp:36:1:virtual TwoWire::~TwoWire()	16	static
+Wire.cpp:59:6:void TwoWire::begin()	16	static
+Wire.cpp:148:6:void TwoWire::beginTransmission(int)	16	static
+Wire.cpp:170:9:uint8_t TwoWire::requestFrom(I2C_TypeDef*, uint8_t, uint8_t, uint32_t, uint8_t, uint8_t)	40	static
+Wire.cpp:264:9:uint8_t TwoWire::requestFrom(I2C_TypeDef*, uint8_t, uint8_t, uint8_t)	40	static
+Wire.cpp:269:9:uint8_t TwoWire::requestFrom(I2C_TypeDef*, uint8_t, uint8_t)	32	static
+Wire.cpp:274:9:uint8_t TwoWire::requestFrom(I2C_TypeDef*, int, int)	32	static
+Wire.cpp:279:9:uint8_t TwoWire::requestFrom(I2C_TypeDef*, int, int, int)	32	static
+Wire.cpp:284:5:int TwoWire::read()	24	static

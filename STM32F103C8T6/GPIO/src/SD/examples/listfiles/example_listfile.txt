@@ -1,0 +1,84 @@
+/*
+ * Project convert STM32 to Arduino
+ *
+ *	Done: SPI1, USART1
+ *
+ *  Created on: Aug 8, 2018
+ *      Author: Van_BasTai
+ */
+
+/* include */
+
+#include <include.h>
+//#include <Wire/Wire.h>
+#include <Serial/Serial.h>
+#include <SPI/SPIClass.h>
+#include <SD/SD.h>
+//#include <Liquid_LCD/LiquidCrystal_SPi.h>
+
+
+/* Private define */
+
+/* Private typedef */
+
+/* Private function prototypes */
+
+/* Private functions */
+
+/* Private vraiable */
+int receiveData = 0;
+File root;
+void printDirectory(File dir, int numTabs) {
+  while (true) {
+
+    File entry =  dir.openNextFile();
+    if (! entry) {
+      // no more files
+      break;
+    }
+    for (uint8_t i = 0; i < numTabs; i++) {
+      Serial.print('\t');
+    }
+    Serial.print(entry.name());
+    if (entry.isDirectory()) {
+      Serial.println("/");
+      printDirectory(entry, numTabs + 1);
+    } else {
+      // files have sizes, directories do not
+      Serial.print("\t\t");
+      Serial.println(entry.size(), DEC);
+    }
+    entry.close();
+  }
+}
+/************************************************************/
+/*                  MAIN FUNCTION							*/
+/************************************************************/
+int main(void)
+{
+	SysTick_Init();
+	Serial.begin(115200);	// Initialize serial communications with the PC
+
+	Serial.println("Scan PICC to see UID and type...");
+
+	pinMode(C13, OUTPUT);
+	Serial.print("Initializing SD card...");
+
+	if (!SD.begin(SPI1_PIN_NSS))
+	{
+		Serial.println("initialization failed!");
+		while (1);
+	}
+	Serial.println("initialization done.");
+
+	root = SD.open("/");
+
+	printDirectory(root, 0);
+
+	Serial.println("done!");
+	while (1)
+	{
+		digitalToggle(C13);
+		delay(1000);
+	}
+}

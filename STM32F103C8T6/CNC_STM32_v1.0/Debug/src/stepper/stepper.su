@@ -1,0 +1,4 @@
+stepper.c:10:6:_delay_stepper	16	static
+stepper.c:16:6:stepper_config	8	static
+stepper.c:25:6:stepper_ctrl	24	static
+stepper.c:45:6:stepper_run	16	static

@@ -1,0 +1,45 @@
+***GPIO checklist
+
+2. nhập pin mode khác so với pinmode đã tạo.
+3. nhập sai số pin (pin < 0 || > 15) //digitalRead(GPIO_TypeDef* GPIOx, uint8_t pin)
+4. nhập GPIO > GPIOH
+5. nhập giá trị biến ko tồn tại
+6. giá trị nhập vào hàm có kiểu dự liệu khác (vd: thay uint8_t bằng int, float, char; kiểu uint16_t thành char, uint8-t)
+7. giá trị nhập vào hàm có kiểu dự liệu khác (vd: thay uint8_t bằng )
+8. chỉ gọi hàm analogRead, ko trả về giá trị
+9. trả về biến có kiểu dự liệu khác: int, char, float...
+10. trong hàm nhập nhiều giá trị tham số.
+11. trả về giá trị đối với hàm kiểu void.
+12. không trả về giá trị của hàm.
+
+
+I. module GPIO:
+
+* ADC_DMA_Init nhập vào ADC_value là con trỏ.
+* ADC_DMA_Init nhập vào len khác với độ dài mảng.
+* analogWrite: trường hợp PWMValue > 4000 hoặc < 0.
+
+II. module interrupt:
+
+* attachInterrupt: 	- hàm nhập vào kiểu khác void.
+					- hàm nhập vào không tồn tại.
+					- hàm nhập vào được tạo sau hàm attachInterrutpt.
+					- khởi tạo 2 pin 1 lúc vd: PIN1|PIN2
+					- khởi tạo 2 mode 1 lúc vd: RISING|FALLING
+
+III. module Serial
+
+* Serial.begin 	- ko nhập vào giá trị, giá trị nhập vào kiểu double...
+* Serial.print(unsigned char b, int base): nhập vào base khác DEC, HEX, BIN.
+
+IV. module SPI1:
+
+chọn sai SPI slave.
+
+V. module I2C1:
+
+* nhập sai địa chỉ I2C.
+* check mode: slave sender, receiver; master sender, master receiver
+* test module LCD, DS1307.
+
+VI. Timer: chưa hoàn thành...

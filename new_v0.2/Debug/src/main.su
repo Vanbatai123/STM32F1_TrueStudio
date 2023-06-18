@@ -1,0 +1,5 @@
+main.c:12:6:_delay	24	static
+main.c:36:8:I2C_Read	40	static
+main.c:133:8:I2C_Write	32	static
+main.c:167:6:I2C_Config	48	static
+main.c:203:5:main	32	static

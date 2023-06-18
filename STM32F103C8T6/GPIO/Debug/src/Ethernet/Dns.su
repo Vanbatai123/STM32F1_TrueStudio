@@ -1,0 +1,17 @@
+IPAddress.h:40:14:uint8_t* IPAddress::raw_address()	16	static
+IPAddress.h:54:5:IPAddress::operator uint32_t() const	16	static
+IPAddress.h:55:10:bool IPAddress::operator==(const IPAddress&) const	16	static
+IPAddress.h:60:14:uint8_t& IPAddress::operator[](int)	16	static
+Printable.h:33:7:Printable::Printable(const Printable&)	16	static
+IPAddress.h:29:7:IPAddress::IPAddress(const IPAddress&)	16	static
+Printable.h:33:7:Printable& Printable::operator=(const Printable&)	16	static
+IPAddress.h:29:7:IPAddress& IPAddress::operator=(const IPAddress&)	16	static
+Ethernet.h:205:20:virtual IPAddress EthernetUDP::remoteIP()	16	static
+Ethernet.h:207:19:virtual uint16_t EthernetUDP::remotePort()	16	static
+Dns.cpp:47:6:void DNSClient::begin(const IPAddress&)	16	static
+Dns.cpp:54:5:int DNSClient::inet_aton(const char*, IPAddress&)	32	static
+Dns.cpp:88:5:int DNSClient::getHostByName(const char*, IPAddress&, uint16_t)	56	static
+Dns.cpp:137:10:uint16_t DNSClient::BuildRequest(const char*)	32	static
+Dns.cpp:214:10:uint16_t DNSClient::ProcessResponse(uint16_t, IPAddress&)	72	static
+Dns.cpp:353:1:void __static_initialization_and_destruction_0(int, int)	24	static
+Dns.cpp:353:1:cpp)	8	static

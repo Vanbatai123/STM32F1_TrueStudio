@@ -1,0 +1,4 @@
+GPIO.cpp:16:6:void pinMode(GPIO_TypeDef*, uint16_t, uint8_t)	24	static
+GPIO.cpp:63:6:void digitalWrite(GPIO_TypeDef*, uint16_t, uint8_t)	16	static
+GPIO.cpp:72:6:void digitalToggle(GPIO_TypeDef*, uint16_t)	16	static
+GPIO.cpp:80:9:uint8_t digitalRead(GPIO_TypeDef*, uint16_t)	16	static

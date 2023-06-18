@@ -1,0 +1,28 @@
+Sd2Card.h:221:11:uint8_t Sd2Card::readCSD(csd_t*)	16	static
+Sd2Card.h:230:11:uint8_t Sd2Card::type() const	16	static
+Sd2Card.h:245:11:uint8_t Sd2Card::cardAcmd(uint8_t, uint32_t)	24	static
+Sd2Card.h:250:8:void Sd2Card::error(uint8_t)	16	static
+Sd2Card.h:255:8:void Sd2Card::type(uint8_t)	16	static
+Sd2Card.cpp:37:13:void spiSend(uint8_t)	16	static
+Sd2Card.cpp:47:17:uint8_t spiRec()	8	static
+Sd2Card.cpp:112:9:uint8_t Sd2Card::cardCommand(uint8_t, uint32_t)	32	static
+Sd2Card.cpp:146:10:uint32_t Sd2Card::cardSize()	48	static
+Sd2Card.cpp:168:6:void Sd2Card::chipSelectHigh()	16	static
+Sd2Card.cpp:178:6:void Sd2Card::chipSelectLow()	16	static
+Sd2Card.cpp:201:9:uint8_t Sd2Card::erase(uint32_t, uint32_t)	24	static
+Sd2Card.cpp:233:9:uint8_t Sd2Card::eraseSingleBlockEnable()	32	static
+Sd2Card.cpp:248:9:uint8_t Sd2Card::init(uint8_t, uint8_t)	40	static
+Sd2Card.cpp:357:6:void Sd2Card::partialBlockRead(uint8_t)	16	static
+Sd2Card.cpp:371:9:uint8_t Sd2Card::readBlock(uint32_t, uint8_t*)	32	static
+Sd2Card.cpp:385:9:uint8_t Sd2Card::readData(uint32_t, uint16_t, uint16_t, uint8_t*)	40	static
+Sd2Card.cpp:454:6:void Sd2Card::readEnd()	16	static
+Sd2Card.cpp:477:9:uint8_t Sd2Card::readRegister(uint8_t, void*)	40	static
+Sd2Card.cpp:508:9:uint8_t Sd2Card::setSckRate(uint8_t)	16	static
+Sd2Card.cpp:539:9:uint8_t Sd2Card::setSpiClock(uint32_t)	16	static
+Sd2Card.cpp:547:9:uint8_t Sd2Card::waitNotBusy(unsigned int)	24	static
+Sd2Card.cpp:559:9:uint8_t Sd2Card::waitStartBlock()	24	static
+Sd2Card.cpp:587:9:uint8_t Sd2Card::writeBlock(uint32_t, const uint8_t*)	24	static
+Sd2Card.cpp:623:9:uint8_t Sd2Card::writeData(const uint8_t*)	16	static
+Sd2Card.cpp:634:9:uint8_t Sd2Card::writeData(uint8_t, const uint8_t*)	32	static
+Sd2Card.cpp:683:9:uint8_t Sd2Card::writeStart(uint32_t, uint32_t)	24	static
+Sd2Card.cpp:714:9:uint8_t Sd2Card::writeStop()	16	static

@@ -1,0 +1,22 @@
+IPAddress.h:55:10:bool IPAddress::operator==(const IPAddress&) const	16	static
+Printable.h:33:7:Printable::Printable(const Printable&)	16	static
+IPAddress.h:29:7:IPAddress::IPAddress(const IPAddress&)	16	static
+Ethernet.h:205:20:virtual IPAddress EthernetUDP::remoteIP()	16	static
+Ethernet.h:207:19:virtual uint16_t EthernetUDP::remotePort()	16	static
+Dhcp.cpp:9:5:int DhcpClass::beginWithDHCP(uint8_t*, long unsigned int, long unsigned int)	24	static
+Dhcp.cpp:26:6:void DhcpClass::reset_DHCP_lease()	16	static
+Dhcp.cpp:32:6:long int random(long int)	16	static
+Dhcp.cpp:40:6:long int random(long int, long int)	24	static
+Dhcp.cpp:50:5:int DhcpClass::request_DHCP_lease()	40	static
+Dhcp.cpp:132:6:void DhcpClass::presend_DHCP()	16	static
+Dhcp.cpp:136:6:void DhcpClass::send_DHCP_MESSAGE(uint8_t, uint16_t)	96	static
+Dhcp.cpp:253:9:uint8_t DhcpClass::parseDHCPResponse(long unsigned int, uint32_t&)	120	static
+Dhcp.cpp:369:5:int DhcpClass::checkLease()	32	static
+Dhcp.cpp:415:11:IPAddress DhcpClass::getLocalIp()	16	static
+Dhcp.cpp:420:11:IPAddress DhcpClass::getSubnetMask()	16	static
+Dhcp.cpp:425:11:IPAddress DhcpClass::getGatewayIp()	16	static
+Dhcp.cpp:430:11:IPAddress DhcpClass::getDhcpServerIp()	16	static
+Dhcp.cpp:435:11:IPAddress DhcpClass::getDnsServerIp()	16	static
+Dhcp.cpp:440:6:void DhcpClass::printByte(char*, uint8_t)	40	static
+Dhcp.cpp:450:1:void __static_initialization_and_destruction_0(int, int)	24	static
+Dhcp.cpp:450:1:cpp)	8	static

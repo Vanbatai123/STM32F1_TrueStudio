@@ -1,0 +1,88 @@
+/*
+ *
+ * Project convert STM32 to Arduino
+ *
+ *	Done: SPI1, USART1, I2C1, ADC1, ADC_DMA, EXTI, Stepper
+ *	Undone: DMA, Interrupt, ADC, Timer...
+ *
+ * 	example: multipleSteppers
+ *
+ * 	*Note: add arduino lib:
+ * 	 -
+ *  Created on: Aug 8, 2018
+ *      Author: Van_BasTai
+ */
+
+/* include */
+
+#include <include.h>
+#include <Serial/Serial.h>
+#include <Wire/Wire.h>
+//#include <AccelStepper/AccelStepper.h>
+//#include <SPI/SPIClass.h>
+//#include <RFID/MFRC522.h>
+//#include <Liquid_LCD/LiquidCrystal_SPi.h>
+
+
+/* Private define */
+
+/* Private typedef */
+
+/* Private function prototypes */
+
+/* Private functions */
+
+/* Private variable */
+uint32_t ttt;
+uint8_t bufData[20], cnt;
+byte buf[12];
+union MyUnion
+{
+	byte b[4];
+	float f;
+}posX, posY, posF;
+/************************************************************/
+/*                  MAIN FUNCTION							*/
+/************************************************************/
+int main(void)
+{
+	SysTick_Init();
+	Serial.begin(115200);
+	Serial.println("READY!!!!!!");
+	pinMode(A4, INPUT_PULLUP);
+	while (1)
+	{
+		if(digitalRead(A4)==0)
+		{
+			Serial.println("OK");
+			//delay(50);
+		}
+	}
+}
+// Serial1 interrupt handler
+void SerialEvent()
+{
+	buf[cnt++]=Serial.read();
+	if (cnt == 12)
+	{
+		cnt = 0;
+		posX.b[0] = buf[0];
+		posX.b[1] = buf[1];
+		posX.b[2] = buf[2];
+		posX.b[3] = buf[3];
+
+		posY.b[0] = buf[4];
+		posY.b[1] = buf[5];
+		posY.b[2] = buf[6];
+		posY.b[3] = buf[7];
+
+		posF.b[0] = buf[8];
+		posF.b[1] = buf[9];
+		posF.b[2] = buf[10];
+		posF.b[3] = buf[11];
+		//Serial.println(posX.f);
+		//Serial.println(posY.f);
+		//Serial.println(posF.f);
+
+	}
+}

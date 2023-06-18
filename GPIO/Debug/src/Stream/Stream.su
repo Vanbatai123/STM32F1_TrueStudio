@@ -1,0 +1,16 @@
+WString.h:113:11:String& String::operator+=(char)	16	static
+Stream.cpp:32:5:int Stream::timedRead()	24	static
+Stream.cpp:44:5:int Stream::timedPeek()	24	static
+Stream.cpp:57:5:int Stream::peekNextDigit(LookaheadMode, bool)	24	static
+Stream.cpp:88:6:void Stream::setTimeout(long unsigned int)	16	static
+Stream.cpp:94:7:bool Stream::find(char*)	24	static
+Stream.cpp:101:6:bool Stream::find(char*, size_t)	32	static
+Stream.cpp:107:7:bool Stream::findUntil(char*, char*)	40	static
+Stream.cpp:115:6:bool Stream::findUntil(char*, size_t, char*, size_t)	64	static
+Stream.cpp:131:6:long int Stream::parseInt(LookaheadMode, char)	32	static
+Stream.cpp:160:7:float Stream::parseFloat(LookaheadMode, char)	40	static
+Stream.cpp:203:8:size_t Stream::readBytes(char*, size_t)	32	static
+Stream.cpp:220:8:size_t Stream::readBytesUntil(char, char*, size_t)	32	static
+Stream.cpp:233:8:String Stream::readString()	24	static
+Stream.cpp:245:8:String Stream::readStringUntil(char)	32	static
+Stream.cpp:257:5:int Stream::findMulti(Stream::MultiTarget*, int)	48	static

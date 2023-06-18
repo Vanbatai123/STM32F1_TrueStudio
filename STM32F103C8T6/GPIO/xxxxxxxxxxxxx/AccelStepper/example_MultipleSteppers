@@ -1,0 +1,105 @@
+/*
+ *
+ * Project convert STM32 to Arduino
+ *
+ *	Done: SPI1, USART1, I2C1, ADC1, ADC_DMA, EXTI, Stepper
+ *	Undone: DMA, Interrupt, ADC, Timer...
+ *
+ * 	example: multipleSteppers
+ *  Created on: Aug 8, 2018
+ *      Author: Van_BasTai
+ */
+
+/* include */
+
+#include <include.h>
+#include <Serial/Serial.h>
+#include <Wire/Wire.h>
+#include <AccelStepper/AccelStepper.h>
+//#include <SPI/SPIClass.h>
+//#include <RFID/MFRC522.h>
+//#include <Liquid_LCD/LiquidCrystal_SPi.h>
+
+
+/* Private define */
+
+/* Private typedef */
+
+/* Private function prototypes */
+
+/* Private functions */
+
+/* Private variable */
+uint32_t ttt;
+uint8_t bufData[20], cnt;
+union MyUnion
+{
+	byte b[4];
+	float f;
+}posX, posY, posF;
+/************************************************************/
+/*                  MAIN FUNCTION							*/
+/************************************************************/
+// Define some steppers and the pins the will use
+AccelStepper stepper1; // Defaults to AccelStepper::FULL4WIRE (4 pins) on 2, 3, 4, 5
+AccelStepper stepper2(AccelStepper::FULL4WIRE, A6, A7, A8, A9);
+AccelStepper stepper3(AccelStepper::FULL2WIRE, A10, A11);
+
+int main(void)
+{
+	SysTick_Init();
+	Serial.begin(115200);
+	Serial.println("READY!!!!!!");
+
+    stepper1.setMaxSpeed(200.0);
+    stepper1.setAcceleration(100.0);
+    stepper1.moveTo(24);
+
+    stepper2.setMaxSpeed(300.0);
+    stepper2.setAcceleration(100.0);
+    stepper2.moveTo(1000000);
+
+    stepper3.setMaxSpeed(300.0);
+    stepper3.setAcceleration(100.0);
+    stepper3.moveTo(1000000);
+	while (1)
+	{
+		ttt = micros();
+		delayMicroseconds(100000);
+		ttt = micros() - ttt;
+		Serial.println(ttt);
+	    // Change direction at the limits
+	    if (stepper1.distanceToGo() == 0)
+		stepper1.moveTo(-stepper1.currentPosition());
+	    stepper1.run();
+	    stepper2.run();
+	    stepper3.run();
+	}
+}
+byte buf[12];
+// Serial1 interrupt handler
+void SerialEvent()
+{
+	buf[cnt++]=Serial.read();
+	if (cnt == 12)
+	{
+		cnt = 0;
+		posX.b[0] = buf[0];
+		posX.b[1] = buf[1];
+		posX.b[2] = buf[2];
+		posX.b[3] = buf[3];
+
+		posY.b[0] = buf[4];
+		posY.b[1] = buf[5];
+		posY.b[2] = buf[6];
+		posY.b[3] = buf[7];
+
+		posF.b[0] = buf[8];
+		posF.b[1] = buf[9];
+		posF.b[2] = buf[10];
+		posF.b[3] = buf[11];
+		Serial.println(posX.f);
+		Serial.println(posY.f);
+		Serial.println(posF.f);
+	}
+}

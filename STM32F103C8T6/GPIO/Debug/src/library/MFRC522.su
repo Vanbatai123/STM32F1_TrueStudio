@@ -1,0 +1,40 @@
+MFRC522.cpp:18:1:MFRC522::MFRC522(uint8_t, uint8_t)	16	static
+MFRC522.cpp:39:6:void MFRC522::setSPIConfig()	16	static
+MFRC522.cpp:52:6:void MFRC522::PCD_WriteRegister(byte, byte)	16	static
+MFRC522.cpp:65:6:void MFRC522::PCD_WriteRegister(byte, byte, byte*)	32	static
+MFRC522.cpp:81:6:byte MFRC522::PCD_ReadRegister(byte)	24	static
+MFRC522.cpp:95:6:void MFRC522::PCD_ReadRegister(byte, byte, byte*, byte)	40	static
+MFRC522.cpp:133:6:void MFRC522::PCD_SetRegisterBitMask(byte, byte)	24	static
+MFRC522.cpp:144:6:void MFRC522::PCD_ClearRegisterBitMask(byte, byte)	24	static
+MFRC522.cpp:158:6:byte MFRC522::PCD_CalculateCRC(byte*, byte, byte*)	40	static
+MFRC522.cpp:196:6:void MFRC522::PCD_Init()	16	static
+MFRC522.cpp:222:6:void MFRC522::PCD_Reset()	16	static
+MFRC522.cpp:238:6:void MFRC522::PCD_AntennaOn()	24	static
+MFRC522.cpp:255:6:byte MFRC522::PCD_TransceiveData(byte*, byte, byte*, byte*, byte*, byte, bool)	56	static
+MFRC522.cpp:273:6:byte MFRC522::PCD_CommunicateWithPICC(byte, byte, byte*, byte, byte*, byte*, byte*, byte, bool)	48	static
+MFRC522.cpp:372:6:byte MFRC522::PICC_RequestA(byte*, byte*)	24	static
+MFRC522.cpp:384:6:byte MFRC522::PICC_WakeupA(byte*, byte*)	24	static
+MFRC522.cpp:396:6:byte MFRC522::PICC_REQA_or_WUPA(byte, byte*, byte*)	48	static
+MFRC522.cpp:435:6:byte MFRC522::PICC_Select(MFRC522::Uid*, byte)	80	static
+MFRC522.cpp:650:6:byte MFRC522::PICC_HaltA()	40	static
+MFRC522.cpp:695:6:byte MFRC522::PCD_Authenticate(byte, byte, MFRC522::MIFARE_Key*, MFRC522::Uid*)	64	static
+MFRC522.cpp:721:6:void MFRC522::PCD_StopCrypto1()	16	static
+MFRC522.cpp:742:6:byte MFRC522::MIFARE_Read(byte, byte*, byte*)	48	static
+MFRC522.cpp:777:6:byte MFRC522::MIFARE_Write(byte, byte*, byte)	32	static
+MFRC522.cpp:812:6:byte MFRC522::MIFARE_Ultralight_Write(byte, byte*, byte)	32	static
+MFRC522.cpp:845:6:byte MFRC522::MIFARE_Decrement(byte, long int)	24	static
+MFRC522.cpp:859:6:byte MFRC522::MIFARE_Increment(byte, long int)	24	static
+MFRC522.cpp:873:6:byte MFRC522::MIFARE_Restore(byte)	16	static
+MFRC522.cpp:885:6:byte MFRC522::MIFARE_TwoStepHelper(byte, byte, long int)	32	static
+MFRC522.cpp:916:6:byte MFRC522::MIFARE_Transfer(byte)	24	static
+MFRC522.cpp:942:6:byte MFRC522::PCD_MIFARE_Transceive(byte*, byte, bool)	72	static
+MFRC522.cpp:987:13:const char* MFRC522::GetStatusCodeName(byte)	16	static
+MFRC522.cpp:1010:6:byte MFRC522::PICC_GetType(byte)	16	static
+MFRC522.cpp:1042:13:const char* MFRC522::PICC_GetTypeName(byte)	16	static
+MFRC522.cpp:1064:6:void MFRC522::PICC_DumpToSerial(MFRC522::Uid*)	32	static
+MFRC522.cpp:1118:6:void MFRC522::PICC_DumpMifareClassicToSerial(MFRC522::Uid*, byte, MFRC522::MIFARE_Key*)	32	static
+MFRC522.cpp:1159:6:void MFRC522::PICC_DumpMifareClassicSectorToSerial(MFRC522::Uid*, MFRC522::MIFARE_Key*, byte)	80	static
+MFRC522.cpp:1293:6:void MFRC522::PICC_DumpMifareUltralightToSerial()	40	static
+MFRC522.cpp:1329:6:void MFRC522::MIFARE_SetAccessBits(byte*, byte, byte, byte, byte)	32	static
+MFRC522.cpp:1354:6:bool MFRC522::PICC_IsNewCardPresent()	24	static
+MFRC522.cpp:1369:6:bool MFRC522::PICC_ReadCardSerial()	24	static

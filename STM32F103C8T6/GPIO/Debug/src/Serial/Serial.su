@@ -1,0 +1,15 @@
+Print.h:47:5:Print::Print()	16	static
+Print.h:64:17:virtual int Print::availableForWrite()	16	static
+Print.h:85:18:virtual void Print::flush()	16	static
+Serial.cpp:14:1:HardwareSerial::HardwareSerial(int)	16	static
+Serial.cpp:62:1:HardwareSerial::~HardwareSerial()	16	static
+Serial.cpp:62:1:virtual HardwareSerial::~HardwareSerial()	16	static
+Serial.cpp:72:6:void HardwareSerial::begin(uint32_t)	40	static
+Serial.cpp:159:6:void HardwareSerial::end()	16	static
+Serial.cpp:180:8:virtual size_t HardwareSerial::write(uint8_t)	16	static
+Serial.cpp:195:9:uint8_t HardwareSerial::read()	16	static
+Serial.cpp:205:6:void USART1_IRQHandler()	8	static
+Serial.cpp:217:6:void USART2_IRQHandler()	8	static
+Serial.cpp:229:6:void USART3_IRQHandler()	8	static
+Serial.cpp:241:41:void __static_initialization_and_destruction_0(int, int)	16	static
+Serial.cpp:241:41:cpp)	8	static

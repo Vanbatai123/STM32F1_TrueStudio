@@ -1,0 +1,11 @@
+uart3.c:13:6:UART3_config	40	static
+uart3.c:66:6:UART3_putChar	16	static
+uart3.c:77:6:UART3_print	16	static
+uart3.c:86:6:UART3_printNum	32	static
+uart3.c:93:6:UART3_printNumln	32	static
+uart3.c:100:6:UART3_printFloat	72	static
+uart3.c:141:6:UART3_printFloatln	24	static
+uart3.c:147:6:UART3_println	16	static
+uart3.c:153:9:UART3_getChar	8	static
+uart3.c:163:6:UART3_printXY	48	static
+uart3.c:170:6:USART3_IRQHandler	8	static

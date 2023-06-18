@@ -1,0 +1,49 @@
+IPAddress.h:40:14:uint8_t* IPAddress::raw_address()	16	static
+IPAddress.h:60:14:uint8_t& IPAddress::operator[](int)	16	static
+w5100.h:152:18:static uint8_t W5100Class::write(uint16_t, uint8_t)	16	static
+w5100.h:156:18:static uint8_t W5100Class::read(uint16_t)	24	static
+w5100.h:220:19:static uint16_t W5100Class::CH_BASE()	4	static
+w5100.h:229:25:static uint8_t W5100Class::readSn(SOCKET, uint16_t)	16	static
+w5100.h:232:25:static uint8_t W5100Class::writeSn(SOCKET, uint16_t, uint8_t)	16	static
+w5100.h:235:26:static uint16_t W5100Class::readSn(SOCKET, uint16_t, uint8_t*, uint16_t)	24	static
+w5100.h:238:26:static uint16_t W5100Class::writeSn(SOCKET, uint16_t, uint8_t*, uint16_t)	24	static
+w5100.h:270:3:static void W5100Class::writeSnMR(SOCKET, uint8_t)	16	static
+w5100.h:272:3:static void W5100Class::writeSnIR(SOCKET, uint8_t)	16	static
+w5100.h:272:3:static uint8_t W5100Class::readSnIR(SOCKET)	16	static
+w5100.h:273:3:static uint8_t W5100Class::readSnSR(SOCKET)	16	static
+w5100.h:274:3:static void W5100Class::writeSnPORT(SOCKET, uint16_t)	24	static
+w5100.h:275:3:static uint16_t W5100Class::writeSnDHAR(SOCKET, uint8_t*)	16	static
+w5100.h:276:3:static uint16_t W5100Class::writeSnDIPR(SOCKET, uint8_t*)	16	static
+w5100.h:277:3:static void W5100Class::writeSnDPORT(SOCKET, uint16_t)	24	static
+w5100.h:284:3:static uint16_t W5100Class::readSnTX_FSR(SOCKET)	24	static
+w5100.h:286:3:static void W5100Class::writeSnTX_WR(SOCKET, uint16_t)	24	static
+w5100.h:286:3:static uint16_t W5100Class::readSnTX_WR(SOCKET)	24	static
+w5100.h:287:3:static uint16_t W5100Class::readSnRX_RSR(SOCKET)	24	static
+w5100.h:288:3:static void W5100Class::writeSnRX_RD(SOCKET, uint16_t)	24	static
+w5100.h:288:3:static uint16_t W5100Class::readSnRX_RD(SOCKET)	24	static
+w5100.h:305:18:static uint8_t W5100Class::getChip()	4	static
+w5100.h:313:19:static uint16_t W5100Class::SBASE(uint8_t)	16	static
+w5100.h:320:19:static uint16_t W5100Class::RBASE(uint8_t)	16	static
+w5100.h:328:15:static bool W5100Class::hasOffsetAddressMapping()	4	static
+socket.cpp:57:6:static void EthernetClass::socketPortRand(uint16_t)	16	static
+socket.cpp:64:9:static uint8_t EthernetClass::socketBegin(uint8_t, uint16_t)	40	static
+socket.cpp:128:9:static uint8_t EthernetClass::socketBeginMulticast(uint8_t, IPAddress, uint16_t)	48	static
+socket.cpp:200:9:static uint8_t EthernetClass::socketStatus(uint8_t)	24	static
+socket.cpp:211:6:static void EthernetClass::socketClose(uint8_t)	16	static
+socket.cpp:221:9:static uint8_t EthernetClass::socketListen(uint8_t)	16	static
+socket.cpp:236:6:static void EthernetClass::socketConnect(uint8_t, uint8_t*, uint16_t)	16	static
+socket.cpp:250:6:static void EthernetClass::socketDisconnect(uint8_t)	16	static
+socket.cpp:264:17:uint16_t getSnRX_RSR(uint8_t)	24	static
+socket.cpp:283:13:void read_data(uint8_t, uint16_t, uint8_t*, uint16_t)	32	static
+socket.cpp:305:5:static int EthernetClass::socketRecv(uint8_t, uint8_t*, int16_t)	32	static
+socket.cpp:351:10:static uint16_t EthernetClass::socketRecvAvailable(uint8_t)	24	static
+socket.cpp:367:9:static uint8_t EthernetClass::socketPeek(uint8_t)	32	static
+socket.cpp:383:17:uint16_t getSnTX_FSR(uint8_t)	24	static
+socket.cpp:399:13:void write_data(uint8_t, uint16_t, const uint8_t*, uint16_t)	32	static
+socket.cpp:423:10:static uint16_t EthernetClass::socketSend(uint8_t, const uint8_t*, uint16_t)	24	static
+socket.cpp:470:10:static uint16_t EthernetClass::socketSendAvailable(uint8_t)	24	static
+socket.cpp:484:10:static uint16_t EthernetClass::socketBufferData(uint8_t, uint16_t, const uint8_t*, uint16_t)	32	static
+socket.cpp:500:6:static bool EthernetClass::socketStartUDP(uint8_t, uint8_t*, uint16_t)	16	static
+socket.cpp:513:6:static bool EthernetClass::socketSendUDP(uint8_t)	16	static
+socket.cpp:539:1:void __static_initialization_and_destruction_0(int, int)	24	static
+socket.cpp:539:1:cpp)	8	static

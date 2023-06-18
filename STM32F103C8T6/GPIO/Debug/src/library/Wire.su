@@ -1,0 +1,25 @@
+Wire.cpp:35:1:TwoWire::TwoWire()	16	static
+Wire.cpp:41:1:TwoWire::~TwoWire()	16	static
+Wire.cpp:41:1:virtual TwoWire::~TwoWire()	16	static
+Wire.cpp:49:6:void twi_attachSlaveTxEvent(void (*)())	16	static
+Wire.cpp:54:6:void twi_attachSlaveRxEvent(void (*)(uint8_t*, int))	16	static
+Wire.cpp:59:6:void TwoWire::begin()	16	static
+Wire.cpp:63:6:void TwoWire::begin(uint8_t)	40	static
+Wire.cpp:110:6:void TwoWire::end()	16	static
+Wire.cpp:115:6:void TwoWire::setClock(uint32_t)	16	static
+Wire.cpp:120:6:void TwoWire::beginTransmission(int)	16	static
+Wire.cpp:125:6:void TwoWire::beginTransmission(uint8_t)	16	static
+Wire.cpp:150:9:uint8_t TwoWire::endTransmission(uint8_t)	16	static
+Wire.cpp:166:9:uint8_t TwoWire::endTransmission()	16	static
+Wire.cpp:171:9:uint8_t TwoWire::requestFrom(int, int)	24	static
+Wire.cpp:176:9:uint8_t TwoWire::requestFrom(uint8_t, uint8_t)	32	static
+Wire.cpp:229:5:int TwoWire::read()	24	static
+Wire.cpp:243:8:size_t TwoWire::write(uint8_t)	16	static
+Wire.cpp:255:8:size_t TwoWire::write(const uint8_t*, size_t)	40	static
+Wire.cpp:290:5:int TwoWire::available()	16	static
+Wire.cpp:296:6:void TwoWire::onReceive(void (*)())	16	static
+Wire.cpp:306:6:void TwoWire::onRequest(void (*)())	16	static
+Wire.cpp:315:6:void I2C1_EV_IRQHandler()	8	static
+Wire.cpp:369:6:void I2C1_ER_IRQHandler()	8	static
+Wire.cpp:378:13:void __static_initialization_and_destruction_0(int, int)	16	static
+Wire.cpp:378:13:cpp)	8	static

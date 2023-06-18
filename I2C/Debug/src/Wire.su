@@ -1,0 +1,3 @@
+Wire.cpp:10:1:TwoWire::TwoWire()	16	static
+Wire.cpp:15:1:TwoWire::~TwoWire()	16	static
+Wire.cpp:15:1:virtual TwoWire::~TwoWire()	16	static

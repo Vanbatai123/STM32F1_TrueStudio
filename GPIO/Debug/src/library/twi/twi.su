@@ -1,0 +1,12 @@
+twi.c:19:6:Twi_AcknowledgeConfig	16	static
+twi.c:76:13:Twi_CheckEvent	32	static
+twi.c:116:6:Twi_Cmd	16	static
+twi.c:137:6:Twi_DeInit	16	static
+twi.c:170:6:Twi_Init	48	static
+twi.c:274:6:Twi_SendData	16	static
+twi.c:287:9:Twi_ReceiveData	16	static
+twi.c:302:6:Twi_GenerateSTART	16	static
+twi.c:326:6:Twi_GenerateSTOP	16	static
+twi.c:372:12:Twi_GetFlagStatus	32	static
+twi.c:429:6:Twi_Send7bitAddress	16	static
+twi.c:449:6:Twi_ClearFlag	16	static

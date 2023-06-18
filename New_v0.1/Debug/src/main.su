@@ -1,0 +1,2 @@
+main.cpp:11:6:void _delay(uint32_t)	24	static
+main.cpp:26:5:int main()	32	static

@@ -1,0 +1,9 @@
+uart1.c:11:6:UART1_config	40	static
+uart1.c:64:6:UART1_putChar	16	static
+uart1.c:75:6:UART1_print	16	static
+uart1.c:84:6:UART1_printNum	48	static
+uart1.c:93:6:UART1_printNumln	48	static
+uart1.c:102:6:UART1_printFloat	72	static
+uart1.c:143:6:UART1_printFloatln	24	static
+uart1.c:149:6:UART1_println	16	static
+uart1.c:155:9:UART1_getChar	8	static

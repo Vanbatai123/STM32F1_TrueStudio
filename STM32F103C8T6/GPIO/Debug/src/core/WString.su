@@ -1,0 +1,83 @@
+stdlib_1.h:417:7:char* itoa(int, char*, int)	24	static
+stdlib_1.h:462:7:char* ltoa(long int, char*, int)	24	static
+stdlib_1.h:505:7:char* utoa(unsigned int, char*, int)	24	static
+stdlib_1.h:547:7:char* ultoa(long unsigned int, char*, int)	24	static
+WString.cpp:33:1:String::String(const char*)	16	static
+WString.cpp:39:1:String::String(const String&)	16	static
+WString.cpp:45:1:String::String(const __FlashStringHelper*)	16	static
+WString.cpp:64:1:String::String(char)	24	static
+WString.cpp:73:1:String::String(unsigned char, unsigned char)	32	static
+WString.cpp:81:1:String::String(int, unsigned char)	64	static
+WString.cpp:89:1:String::String(unsigned int, unsigned char)	64	static
+WString.cpp:97:1:String::String(long int, unsigned char)	64	static
+WString.cpp:105:1:String::String(long unsigned int, unsigned char)	64	static
+WString.cpp:113:1:String::String(float, unsigned char)	80	static
+WString.cpp:120:1:String::String(double, unsigned char)	72	static
+WString.cpp:127:1:String::~String()	16	static
+WString.cpp:136:13:void String::init()	16	static
+WString.cpp:143:6:void String::invalidate()	16	static
+WString.cpp:150:15:unsigned char String::reserve(unsigned int)	16	static
+WString.cpp:160:15:unsigned char String::changeBuffer(unsigned int)	24	static
+WString.cpp:175:10:String& String::copy(const char*, unsigned int)	24	static
+WString.cpp:186:10:String& String::copy(const __FlashStringHelper*, unsigned int)	24	static
+WString.cpp:219:10:String& String::operator=(const String&)	16	static
+WString.cpp:243:10:String& String::operator=(const char*)	16	static
+WString.cpp:251:10:String& String::operator=(const __FlashStringHelper*)	24	static
+WString.cpp:263:15:unsigned char String::concat(const String&)	16	static
+WString.cpp:268:15:unsigned char String::concat(const char*, unsigned int)	32	static
+WString.cpp:279:15:unsigned char String::concat(const char*)	16	static
+WString.cpp:285:15:unsigned char String::concat(char)	24	static
+WString.cpp:293:15:unsigned char String::concat(unsigned char)	24	static
+WString.cpp:300:15:unsigned char String::concat(int)	32	static
+WString.cpp:307:15:unsigned char String::concat(unsigned int)	32	static
+WString.cpp:314:15:unsigned char String::concat(long int)	32	static
+WString.cpp:321:15:unsigned char String::concat(long unsigned int)	32	static
+WString.cpp:328:15:unsigned char String::concat(float)	48	static
+WString.cpp:335:15:unsigned char String::concat(double)	56	static
+WString.cpp:342:15:unsigned char String::concat(const __FlashStringHelper*)	32	static
+WString.cpp:358:19:StringSumHelper& operator+(const StringSumHelper&, const String&)	24	static
+WString.cpp:365:19:StringSumHelper& operator+(const StringSumHelper&, const char*)	32	static
+WString.cpp:372:19:StringSumHelper& operator+(const StringSumHelper&, char)	24	static
+WString.cpp:379:19:StringSumHelper& operator+(const StringSumHelper&, unsigned char)	24	static
+WString.cpp:386:19:StringSumHelper& operator+(const StringSumHelper&, int)	24	static
+WString.cpp:393:19:StringSumHelper& operator+(const StringSumHelper&, unsigned int)	24	static
+WString.cpp:400:19:StringSumHelper& operator+(const StringSumHelper&, long int)	24	static
+WString.cpp:407:19:StringSumHelper& operator+(const StringSumHelper&, long unsigned int)	24	static
+WString.cpp:414:19:StringSumHelper& operator+(const StringSumHelper&, float)	24	static
+WString.cpp:421:19:StringSumHelper& operator+(const StringSumHelper&, double)	32	static
+WString.cpp:428:19:StringSumHelper& operator+(const StringSumHelper&, const __FlashStringHelper*)	24	static
+WString.cpp:439:5:int String::compareTo(const String&) const	16	static
+WString.cpp:449:15:unsigned char String::equals(const String&) const	16	static
+WString.cpp:454:15:unsigned char String::equals(const char*) const	16	static
+WString.cpp:461:15:unsigned char String::operator<(const String&) const	16	static
+WString.cpp:466:15:unsigned char String::operator>(const String&) const	16	static
+WString.cpp:471:15:unsigned char String::operator<=(const String&) const	16	static
+WString.cpp:476:15:unsigned char String::operator>=(const String&) const	16	static
+WString.cpp:481:15:unsigned char String::equalsIgnoreCase(const String&) const	32	static
+WString.cpp:494:15:unsigned char String::startsWith(const String&) const	16	static
+WString.cpp:500:15:unsigned char String::startsWith(const String&, unsigned int) const	24	static
+WString.cpp:506:15:unsigned char String::endsWith(const String&) const	16	static
+WString.cpp:516:6:char String::charAt(unsigned int) const	16	static
+WString.cpp:521:6:void String::setCharAt(unsigned int, char)	24	static
+WString.cpp:526:8:char& String::operator[](unsigned int)	16	static
+WString.cpp:536:6:char String::operator[](unsigned int) const	16	static
+WString.cpp:542:6:void String::getBytes(unsigned char*, unsigned int, unsigned int) const	32	static
+WString.cpp:559:5:int String::indexOf(char) const	16	static
+WString.cpp:564:5:int String::indexOf(char, unsigned int) const	32	static
+WString.cpp:572:5:int String::indexOf(const String&) const	16	static
+WString.cpp:577:5:int String::indexOf(const String&, unsigned int) const	32	static
+WString.cpp:585:5:int String::lastIndexOf(char) const	16	static
+WString.cpp:590:5:int String::lastIndexOf(char, unsigned int) const	32	static
+WString.cpp:601:5:int String::lastIndexOf(const String&) const	16	static
+WString.cpp:606:5:int String::lastIndexOf(const String&, unsigned int) const	32	static
+WString.cpp:619:8:String String::substring(unsigned int, unsigned int) const	32	static
+WString.cpp:640:6:void String::replace(char, char)	24	static
+WString.cpp:648:6:void String::replace(const String&, const String&)	56	static
+WString.cpp:691:6:void String::remove(unsigned int)	16	static
+WString.cpp:698:6:void String::remove(unsigned int, unsigned int)	32	static
+WString.cpp:708:6:void String::toLowerCase()	24	static
+WString.cpp:716:6:void String::toUpperCase()	24	static
+WString.cpp:724:6:void String::trim()	24	static
+WString.cpp:740:6:long int String::toInt() const	16	static
+WString.cpp:746:7:float String::toFloat() const	24	static
+WString.cpp:751:8:double String::toDouble() const	24	static

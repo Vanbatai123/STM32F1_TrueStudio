@@ -1,0 +1,2 @@
+gcode.c:10:15:getAllGcodeValue	64	static
+gcode.c:26:9:getGcodeValue	40	static

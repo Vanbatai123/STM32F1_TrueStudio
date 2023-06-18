@@ -1,0 +1,75 @@
+/*
+ *
+ * Project convert STM32 to Arduino
+ *
+ *	Done: SPI1, USART1, I2C1, ADC1, ADC_DMA, EXTI
+ *	Undone: DMA, Interrupt, ADC, Timer...
+ *
+ *  Created on: Aug 8, 2018
+ *      Author: Van_BasTai
+ */
+
+/* include */
+
+#include <include.h>
+#include <Serial/Serial.h>
+//#include <Wire/Wire.h>
+//#include <SPI/SPIClass.h>
+//#include <RFID/MFRC522.h>
+//#include <Liquid_LCD/LiquidCrystal_SPi.h>
+
+
+/* Private define */
+
+/* Private typedef */
+
+/* Private function prototypes */
+
+/* Private functions */
+
+/* Private vraiable */
+int receiveData = 0;
+
+/************************************************************/
+/*                  MAIN FUNCTION							*/
+/************************************************************/
+int main(void)
+{
+	ADC_InitTypeDef ADC_InitStructure;/* Reset ADC init structure parameters values */
+	GPIO_InitTypeDef GPIO_InitStructure;
+
+	GPIO_InitStructure.GPIO_Pin = P0;
+	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AIN;
+	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
+	GPIO_Init(GPIOA, &GPIO_InitStructure);
+
+	/* Initialize the ADC_Mode member */
+	ADC_InitStructure.ADC_Mode = ADC_Mode_Independent;
+	/* initialize the ADC_ScanConvMode member */
+	ADC_InitStructure.ADC_ScanConvMode = DISABLE;
+	/* Initialize the ADC_ContinuousConvMode member */
+	ADC_InitStructure.ADC_ContinuousConvMode = ENABLE;
+	/* Initialize the ADC_ExternalTrigConv member */
+	ADC_InitStructure.ADC_ExternalTrigConv = ADC_ExternalTrigConv_T1_CC1;
+	/* Initialize the ADC_DataAlign member */
+	ADC_InitStructure.ADC_DataAlign = ADC_DataAlign_Right;
+	/* Initialize the ADC_NbrOfChannel member */
+	ADC_InitStructure.ADC_NbrOfChannel = 1;
+	ADC_Init(ADC1, &ADC_InitStructure);
+
+	/* Enable ADC1*/
+	ADC_Cmd(ADC1, ENABLE);
+	
+
+	Serial.begin(115200);
+	Serial.println("READY TO GO!!!");
+	pinMode(GC, P13, 1);
+	while (1)
+	{
+		int AdcValue = 0;
+		digitalToggle(GC, P13);
+		AdcValue = ADC_GetConversionValue(ADC1);
+		Serial.println(AdcValue);
+		delay(1000);
+	}
+}

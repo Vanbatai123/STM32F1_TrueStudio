@@ -1,0 +1,126 @@
+21:02:23 **** Incremental Build of configuration Debug for project STM32_ARDUINO ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-g++ -c ..\src\core\PluggableUSB.cpp -mthumb -mcpu=cortex-m3 -std=gnu++98 -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -I../src -I../Libraries/STM32F10x_StdPeriph_Driver/inc -I../Libraries/CMSIS/Device/ST/STM32F10x/Include -I../Libraries/CMSIS/Include -O0 -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -g -fstack-usage -Wall -fno-threadsafe-statics -specs=nano.specs -o src\core\PluggableUSB.o 
+arm-atollic-eabi-g++ -c ..\src\core\HardwareSerial3.cpp -mthumb -mcpu=cortex-m3 -std=gnu++98 -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -I../src -I../Libraries/STM32F10x_StdPeriph_Driver/inc -I../Libraries/CMSIS/Device/ST/STM32F10x/Include -I../Libraries/CMSIS/Include -O0 -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -g -fstack-usage -Wall -fno-threadsafe-statics -specs=nano.specs -o src\core\HardwareSerial3.o 
+In file included from ..\src\core\HardwareSerial3.cpp:25:0:
+..\src\core\Arduino.h:126:9: error: 'uint8_t' does not name a type
+ typedef uint8_t byte;
+         ^~~~~~~
+..\src\core\Arduino.h:133:14: error: variable or field 'pinMode' declared void
+ void pinMode(uint8_t, uint8_t);
+              ^~~~~~~
+..\src\core\Arduino.h:133:14: error: 'uint8_t' was not declared in this scope
+..\src\core\Arduino.h:133:23: error: 'uint8_t' was not declared in this scope
+ void pinMode(uint8_t, uint8_t);
+                       ^~~~~~~
+..\src\core\Arduino.h:134:19: error: variable or field 'digitalWrite' declared void
+ void digitalWrite(uint8_t, uint8_t);
+                   ^~~~~~~
+..\src\core\Arduino.h:134:19: error: 'uint8_t' was not declared in this scope
+..\src\core\Arduino.h:134:28: error: 'uint8_t' was not declared in this scope
+ void digitalWrite(uint8_t, uint8_t);
+                            ^~~~~~~
+..\src\core\Arduino.h:135:17: error: 'uint8_t' was not declared in this scope
+ int digitalRead(uint8_t);
+                 ^~~~~~~
+..\src\core\Arduino.h:136:16: error: 'uint8_t' was not declared in this scope
+ int analogRead(uint8_t);
+                ^~~~~~~
+..\src\core\Arduino.h:137:22: error: variable or field 'analogReference' declared void
+ void analogReference(uint8_t mode);
+                      ^~~~~~~
+..\src\core\Arduino.h:137:22: error: 'uint8_t' was not declared in this scope
+..\src\core\Arduino.h:138:18: error: variable or field 'analogWrite' declared void
+ void analogWrite(uint8_t, int);
+                  ^~~~~~~
+..\src\core\Arduino.h:138:18: error: 'uint8_t' was not declared in this scope
+..\src\core\Arduino.h:138:27: error: expected primary-expression before 'int'
+ void analogWrite(uint8_t, int);
+                           ^~~
+..\src\core\Arduino.h:144:23: error: 'uint8_t' was not declared in this scope
+ unsigned long pulseIn(uint8_t pin, uint8_t state, unsigned long timeout);
+                       ^~~~~~~
+..\src\core\Arduino.h:144:36: error: 'uint8_t' was not declared in this scope
+ unsigned long pulseIn(uint8_t pin, uint8_t state, unsigned long timeout);
+                                    ^~~~~~~
+..\src\core\Arduino.h:144:51: error: expected primary-expression before 'unsigned'
+ unsigned long pulseIn(uint8_t pin, uint8_t state, unsigned long timeout);
+                                                   ^~~~~~~~
+..\src\core\Arduino.h:144:72: error: expression list treated as compound expression in initializer [-fpermissive]
+ unsigned long pulseIn(uint8_t pin, uint8_t state, unsigned long timeout);
+                                                                        ^
+..\src\core\Arduino.h:145:27: error: 'uint8_t' was not declared in this scope
+ unsigned long pulseInLong(uint8_t pin, uint8_t state, unsigned long timeout);
+                           ^~~~~~~
+..\src\core\Arduino.h:145:40: error: 'uint8_t' was not declared in this scope
+ unsigned long pulseInLong(uint8_t pin, uint8_t state, unsigned long timeout);
+                                        ^~~~~~~
+..\src\core\Arduino.h:145:55: error: expected primary-expression before 'unsigned'
+ unsigned long pulseInLong(uint8_t pin, uint8_t state, unsigned long timeout);
+                                                       ^~~~~~~~
+..\src\core\Arduino.h:145:76: error: expression list treated as compound expression in initializer [-fpermissive]
+ unsigned long pulseInLong(uint8_t pin, uint8_t state, unsigned long timeout);
+                                                                            ^
+..\src\core\Arduino.h:147:15: error: variable or field 'shiftOut' declared void
+ void shiftOut(uint8_t dataPin, uint8_t clockPin, uint8_t bitOrder, uint8_t val);
+               ^~~~~~~
+..\src\core\Arduino.h:147:15: error: 'uint8_t' was not declared in this scope
+..\src\core\Arduino.h:147:32: error: 'uint8_t' was not declared in this scope
+ void shiftOut(uint8_t dataPin, uint8_t clockPin, uint8_t bitOrder, uint8_t val);
+                                ^~~~~~~
+..\src\core\Arduino.h:147:50: error: 'uint8_t' was not declared in this scope
+ void shiftOut(uint8_t dataPin, uint8_t clockPin, uint8_t bitOrder, uint8_t val);
+                                                  ^~~~~~~
+..\src\core\Arduino.h:147:68: error: 'uint8_t' was not declared in this scope
+ void shiftOut(uint8_t dataPin, uint8_t clockPin, uint8_t bitOrder, uint8_t val);
+                                                                    ^~~~~~~
+..\src\core\Arduino.h:148:1: error: 'uint8_t' does not name a type
+ uint8_t shiftIn(uint8_t dataPin, uint8_t clockPin, uint8_t bitOrder);
+ ^~~~~~~
+..\src\core\Arduino.h:150:22: error: variable or field 'attachInterrupt' declared void
+ void attachInterrupt(uint8_t, void (*)(void), int mode);
+                      ^~~~~~~
+..\src\core\Arduino.h:150:22: error: 'uint8_t' was not declared in this scope
+..\src\core\Arduino.h:150:31: error: expected primary-expression before 'void'
+ void attachInterrupt(uint8_t, void (*)(void), int mode);
+                               ^~~~
+..\src\core\Arduino.h:150:47: error: expected primary-expression before 'int'
+ void attachInterrupt(uint8_t, void (*)(void), int mode);
+                                               ^~~
+..\src\core\Arduino.h:151:29: error: variable or field 'detachInterrupt' declared void
+ void detachInterrupt(uint8_t);
+                             ^
+..\src\core\Arduino.h:151:22: error: 'uint8_t' was not declared in this scope
+ void detachInterrupt(uint8_t);
+                      ^~~~~~~
+In file included from ..\src\core\HardwareSerial3.cpp:25:0:
+..\src\core\Arduino.h:239:19: error: 'uint16_t makeWord' redeclared as different kind of symbol
+ uint16_t makeWord(byte h, byte l);
+                   ^~~~
+..\src\core\Arduino.h:238:10: note: previous declaration 'uint16_t makeWord(uint16_t)'
+ uint16_t makeWord(uint16_t w);
+          ^~~~~~~~
+..\src\core\Arduino.h:239:19: error: 'byte' was not declared in this scope
+ uint16_t makeWord(byte h, byte l);
+                   ^~~~
+..\src\core\Arduino.h:239:27: error: 'byte' was not declared in this scope
+ uint16_t makeWord(byte h, byte l);
+                           ^~~~
+..\src\core\Arduino.h:243:83: error: 'long unsigned int pulseIn(uint8_t, uint8_t, long unsigned int)' redeclared as different kind of symbol
+ unsigned long pulseIn(uint8_t pin, uint8_t state, unsigned long timeout = 1000000L);
+                                                                                   ^
+In file included from ..\src\core\HardwareSerial3.cpp:25:0:
+..\src\core\Arduino.h:144:15: note: previous declaration 'long unsigned int pulseIn'
+ unsigned long pulseIn(uint8_t pin, uint8_t state, unsigned long timeout);
+               ^~~~~~~
+In file included from ..\src\core\HardwareSerial3.cpp:25:0:
+..\src\core\Arduino.h:244:87: error: 'long unsigned int pulseInLong(uint8_t, uint8_t, long unsigned int)' redeclared as different kind of symbol
+ unsigned long pulseInLong(uint8_t pin, uint8_t state, unsigned long timeout = 1000000L);
+                                                                                       ^
+In file included from ..\src\core\HardwareSerial3.cpp:25:0:
+..\src\core\Arduino.h:145:15: note: previous declaration 'long unsigned int pulseInLong'
+ unsigned long pulseInLong(uint8_t pin, uint8_t state, unsigned long timeout);
+               ^~~~~~~~~~~
+
+21:02:24 Build Finished (took 328ms)
+

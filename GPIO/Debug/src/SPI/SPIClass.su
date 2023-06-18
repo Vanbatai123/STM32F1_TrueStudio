@@ -1,0 +1,21 @@
+SPIClass.cpp:13:1:SPIClass::SPIClass(int)	16	static
+SPIClass.cpp:52:1:SPIClass::~SPIClass()	16	static
+SPIClass.cpp:52:1:virtual SPIClass::~SPIClass()	16	static
+SPIClass.cpp:57:6:void SPIClass::SPISettings(uint16_t, uint16_t, uint16_t)	24	static
+SPIClass.cpp:65:6:void SPIClass::beginTransaction()	16	static
+SPIClass.cpp:70:6:void SPIClass::endTransaction()	16	static
+SPIClass.cpp:85:6:void SPIClass::begin(uint16_t)	40	static
+SPIClass.cpp:161:9:uint8_t SPIClass::transfer(uint8_t)	16	static
+SPIClass.cpp:181:6:void SPIClass::transfer(void*, size_t)	32	static
+SPIClass.cpp:210:9:uint8_t SPIClass::read()	16	static
+SPIClass.cpp:219:6:void SPIClass::write(uint8_t)	16	static
+SPIClass.cpp:228:6:void SPIClass::setBitOrder(uint16_t)	16	static
+SPIClass.cpp:235:6:void SPIClass::setDataMode(uint16_t)	16	static
+SPIClass.cpp:250:6:void SPIClass::setDataSize(uint16_t)	16	static
+SPIClass.cpp:260:6:void SPIClass::setClockDivider(uint16_t)	16	static
+SPIClass.cpp:266:6:void SPIClass::attachInterrupt(void (*)())	24	static
+SPIClass.cpp:296:6:void SPIClass::detachInterrupt()	16	static
+SPIClass.cpp:301:6:void SPI1_IRQHandler()	8	static
+SPIClass.cpp:310:6:void SPI2_IRQHandler()	8	static
+SPIClass.cpp:319:26:void __static_initialization_and_destruction_0(int, int)	16	static
+SPIClass.cpp:319:26:cpp)	8	static

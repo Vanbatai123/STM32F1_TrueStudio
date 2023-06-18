@@ -1,0 +1,5 @@
+i2c.c:27:8:Status I2C_Read(I2C_TypeDef*, uint8_t*, uint32_t, uint8_t)	40	static
+i2c.c:154:8:Status I2C_Write(I2C_TypeDef*, const uint8_t*, uint32_t, uint8_t)	32	static
+i2c.c:191:6:void I2C_LowLevel_Init(I2C_TypeDef*, int, int)	48	static
+main.cpp:48:6:void _delay(uint32_t)	24	static
+main.cpp:57:5:int main()	8	static

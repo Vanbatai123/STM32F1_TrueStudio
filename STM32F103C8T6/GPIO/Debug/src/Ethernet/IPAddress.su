@@ -1,0 +1,12 @@
+Printable.h:33:7:Printable::Printable()	16	static
+IPAddress.cpp:24:1:IPAddress::IPAddress()	16	static
+IPAddress.cpp:29:1:IPAddress::IPAddress(uint8_t, uint8_t, uint8_t, uint8_t)	16	static
+IPAddress.cpp:37:1:IPAddress::IPAddress(uint32_t)	16	static
+IPAddress.cpp:42:1:IPAddress::IPAddress(const uint8_t*)	16	static
+IPAddress.cpp:47:6:bool IPAddress::fromString(const char*)	24	static
+IPAddress.cpp:87:12:IPAddress& IPAddress::operator=(const uint8_t*)	16	static
+IPAddress.cpp:93:12:IPAddress& IPAddress::operator=(uint32_t)	16	static
+IPAddress.cpp:99:6:bool IPAddress::operator==(const uint8_t*) const	16	static
+IPAddress.cpp:104:8:virtual size_t IPAddress::printTo(Print&) const	24	static
+IPAddress.cpp:114:1:void __static_initialization_and_destruction_0(int, int)	24	static
+IPAddress.cpp:114:1:cpp)	8	static

@@ -1,0 +1,65 @@
+/*
+ *
+ * Project convert STM32 to Arduino
+ *
+ *	Done: SPI1, USART1, I2C1, ADC1, ADC_DMA, EXTI
+ *	Undone: DMA, Interrupt, ADC, Timer...
+ *
+ *  Created on: Aug 8, 2018
+ *      Author: Van_BasTai
+ */
+
+
+/* include */
+
+#include <include.h>
+#include <Serial/Serial.h>
+#include <Wire/Wire.h>
+//#include <SPI/SPIClass.h>
+//#include <RFID/MFRC522.h>
+//#include <Liquid_LCD/LiquidCrystal_SPi.h>
+
+/* Private define */
+
+/* Private typedef */
+
+/* Private function prototypes */
+
+/* Private functions */
+
+/* Private variable */
+
+/************************************************************/
+/*                  MAIN FUNCTION							*/
+/************************************************************/
+int event = 0;
+void receiveEvent(void)
+{
+	char c = I2C_ReceiveData(I2C1);
+	if(c != '$')
+		Serial.print(c);
+	else
+		Serial.println();
+}
+uint8_t arr[] = "TaiVan";
+
+void requestEvent(void)
+{
+	Wire.write(arr,6);
+}
+int main(void)
+{
+	Wire.begin(0x27);
+	Wire.onReceive(receiveEvent);
+	Wire.onRequest(requestEvent);
+	Serial.begin(115200);
+	pinMode(GPIOC, 13, 1);
+	pinMode(GPIOC, 15, INPUT_PULLUP);
+	Serial.println("READY!!!!!!");
+	int a = 0;
+	while (1)
+	{
+		Serial.println(a++);
+		delay(1000);
+	}
+}

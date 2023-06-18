@@ -1,0 +1,12 @@
+SdFat.h:529:15:static void SdVolume::cacheSetDirty()	4	static
+SdFat.h:534:11:uint8_t SdVolume::fatPutEOC(uint32_t)	16	static
+SdFat.h:538:11:uint8_t SdVolume::isEOC(uint32_t) const	16	static
+SdVolume.cpp:31:9:uint8_t SdVolume::allocContiguous(uint32_t, uint32_t*)	48	static
+SdVolume.cpp:99:9:static uint8_t SdVolume::cacheFlush()	8	static
+SdVolume.cpp:116:9:static uint8_t SdVolume::cacheRawBlock(uint32_t, uint8_t)	16	static
+SdVolume.cpp:127:9:static uint8_t SdVolume::cacheZeroBlock(uint32_t)	24	static
+SdVolume.cpp:140:9:uint8_t SdVolume::chainSize(uint32_t, uint32_t*) const	32	static
+SdVolume.cpp:151:9:uint8_t SdVolume::fatGet(uint32_t, uint32_t*) const	32	static
+SdVolume.cpp:167:9:uint8_t SdVolume::fatPut(uint32_t, uint32_t)	32	static
+SdVolume.cpp:195:9:uint8_t SdVolume::freeChain(uint32_t)	24	static
+SdVolume.cpp:227:9:uint8_t SdVolume::init(Sd2Card*, uint8_t)	40	static

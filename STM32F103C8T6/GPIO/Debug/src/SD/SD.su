@@ -1,0 +1,37 @@
+Sd2Card.h:179:3:Sd2Card::Sd2Card()	16	static
+FatStructs.h:415:23:uint8_t DIR_IS_FILE_OR_SUBDIR(const dir_t*)	16	static
+Print.h:47:5:Print::Print()	16	static
+SdFat.h:140:3:SdFile::SdFile()	16	static
+SdFat.h:208:12:uint32_t SdFile::fileSize() const	16	static
+SdFat.h:216:11:uint8_t SdFile::isOpen() const	16	static
+SdFat.h:248:8:void SdFile::rewind()	16	static
+SdFat.h:328:11:uint8_t SdFile::makeDir(SdFile&, const char*)	24	static
+SdFat.h:334:11:uint8_t SdFile::open(SdFile&, const char*, uint8_t)	24	static
+SdFat.h:349:11:uint8_t SdFile::openRoot(SdVolume&)	16	static
+SdFat.h:356:18:static uint8_t SdFile::remove(SdFile&, const char*)	16	static
+SdFat.h:434:3:SdVolume::SdVolume()	16	static
+SdFat.h:454:11:uint8_t SdVolume::init(Sd2Card*)	16	static
+SdFat.h:485:11:uint8_t SdVolume::init(Sd2Card&)	16	static
+SdFatUtil.h:39:21:int FreeRam()	16	static
+Print.h:38:7:Print::Print(const Print&)	16	static
+SD.cpp:61:6:bool SDLib::getNextPathComponent(const char*, unsigned int*, char*)	32	static
+SD.cpp:120:9:boolean SDLib::walkPath(const char*, SdFile&, boolean (*)(SdFile&, const char*, boolean, void*), void*)	152	static
+SD.cpp:235:9:boolean SDLib::callback_pathExists(SdFile&, const char*, boolean, void*)	72	static
+SD.cpp:258:9:boolean SDLib::callback_makeDirPath(SdFile&, const char*, boolean, void*)	72	static
+SD.cpp:313:9:boolean SDLib::callback_remove(SdFile&, const char*, boolean, void*)	24	static
+SD.cpp:321:9:boolean SDLib::callback_rmdir(SdFile&, const char*, boolean, void*)	64	static
+SD.cpp:337:9:boolean SDLib::SDClass::begin(uint8_t)	16	static
+SD.cpp:353:9:boolean SDLib::SDClass::begin(uint32_t, uint8_t)	24	static
+SD.cpp:363:6:void SDLib::SDClass::end()	16	static
+SdFat.h:137:7:SdFile::SdFile(const SdFile&)	16	static
+SD.cpp:369:8:SdFile SDLib::SDClass::getParentDir(const char*, int*)	144	static
+SD.cpp:427:6:SDLib::File SDLib::SDClass::open(const char*, uint8_t)	192	static
+SD.cpp:529:9:boolean SDLib::SDClass::exists(const char*)	16	static
+SD.cpp:550:9:boolean SDLib::SDClass::mkdir(const char*)	16	static
+SD.cpp:561:9:boolean SDLib::SDClass::rmdir(const char*)	16	static
+SD.cpp:572:9:boolean SDLib::SDClass::remove(const char*)	16	static
+SD.cpp:578:6:SDLib::File SDLib::File::openNextFile(uint8_t)	152	static
+SD.cpp:622:6:void SDLib::File::rewindDirectory()	16	static
+SD.h:58:7:SDLib::SDClass::SDClass()	16	static
+SD.cpp:629:2:void __static_initialization_and_destruction_0(int, int)	16	static
+SD.cpp:629:2:cpp)	8	static
